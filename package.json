@@ -1,0 +1,11 @@
+{
+  "name": "koapp-module-compilationfeed",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Privacy-safe King of App compilation status module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/module.test.js",
+    "build": "mkdir -p dist && zip -q -r dist/koapp-module-compilationfeed_1.0.0.zip config.json index.html controller.js style.html locale docs README.md"
+  }
+}
