@@ -17,7 +17,10 @@ assert(config.files.includes('modules/compilationfeed/locale/en_US.json'));
 assert.deepStrictEqual(Object.keys(es).sort(), Object.keys(en).sort());
 assert.deepStrictEqual(Object.keys(es.status).sort(), Object.keys(en.status).sort());
 assert.deepStrictEqual(Object.keys(es.error).sort(), Object.keys(en.error).sort());
+assert(config['name-lang']['es-ES'] && config['name-lang']['en-US']);
 assert(config.description['es-ES'] && config.description['en-US']);
+assert.strictEqual(config.documentation['es-ES'], 'modules/compilationfeed/documentation/es_ES.md');
+assert.strictEqual(config.documentation['en-US'], 'modules/compilationfeed/documentation/en_US.md');
 assert(config.showOn.market && config.showOn.dragDrop);
 
 console.log('Module metadata and locale bundles are valid');
